@@ -1,4 +1,4 @@
-let numeroPensado = Math.round(Math.random()*10);
+let numeroPensado = Math.round(Math.random() * 10);
 let numeroLanzado = parseInt(prompt("Elige un número entre 0 y 10"));
 
 function saltoDeLinea() {
@@ -12,8 +12,6 @@ function imprimir(frase) {
 
 if (numeroPensado == numeroLanzado) {
   imprimir("Usted acertó");
-}
-
-if (numeroPensado != numeroLanzado) {
+} else {
   imprimir("Usted erró, el número pensado era: " + numeroPensado);
 }
