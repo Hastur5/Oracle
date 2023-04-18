@@ -1,6 +1,8 @@
-let secreto = 5;
+let secreto = Math.round(Math.random() * 10);
 let input = document.querySelector("input");
 let button = document.querySelector("button");
+
+console.log(secreto)
 
 function verificar() {
   if (parseInt(input.value) == secreto) {
