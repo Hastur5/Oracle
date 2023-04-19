@@ -1,7 +1,15 @@
 // let secreto = Math.round(Math.random() * 10);
-let secretos = [3, 5, 7, 9];
+let secretos = [];
+secretos.push(aleatorio());
+secretos.push(aleatorio());
+secretos.push(aleatorio());
+secretos.push(aleatorio());
 let input = document.querySelector("input");
 let button = document.querySelector("button");
+
+function aleatorio() {
+  secretos.push(Math.round(Math.random() * 10));
+}
 
 function verificar() {
   let encontrado = false;
@@ -9,7 +17,7 @@ function verificar() {
     if (parseInt(input.value) == secretos[i]) {
       alert("Usted acertó");
       encontrado = true;
-      break
+      break;
     }
   }
   if (encontrado == false) {
