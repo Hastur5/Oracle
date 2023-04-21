@@ -1,14 +1,19 @@
 // let secreto = Math.round(Math.random() * 10);
-let secretos = [];
-secretos.push(aleatorio());
-secretos.push(aleatorio());
-secretos.push(aleatorio());
-secretos.push(aleatorio());
+let secretos = sortearNumeros(4);
 let input = document.querySelector("input");
 let button = document.querySelector("button");
+let contador = 1
+
+console.log(secretos)
 
 function aleatorio() {
   secretos.push(Math.round(Math.random() * 10));
+}
+
+function(cantidad){
+  while(contador<=)
+  secretos = []
+  numeroAleatorio = aleatorio()
 }
 
 function verificar() {
