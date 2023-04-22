@@ -61,26 +61,26 @@ body {
   color: #000;
 }
 .calculator.dark {
-  background-color: #1B1B1B;
+  background-color: #1b1b1b;
 }
 .calculator.dark #display {
   color: #f8fafb;
 }
 .calculator.dark #clear {
-  background-color: #4C35AA;
+  background-color: #4c35aa;
   color: white;
 }
 .calculator.dark .btn-number {
-  background-color: #8EFDA6;
+  background-color: #8efda6;
   color: black;
   font-weight: 600;
 }
 .calculator.dark .btn-operator {
-  background-color: #F0DB4F;
+  background-color: #f0db4f;
   color: #aa00a4;
 }
 .calculator.dark .btn-equal {
-  background-color: #F23B00;
+  background-color: #f23b00;
   color: #ffffff;
 }
 
