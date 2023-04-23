@@ -7,6 +7,8 @@ let inicio = 1;
 let edadTotal = 0;
 let mediaEdad;
 
+console.log(familia)
+
 function saltoDeLinea() {
   document.write("<br><br><br>");
 }

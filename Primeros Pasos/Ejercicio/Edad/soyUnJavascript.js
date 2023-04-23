@@ -1,7 +1,11 @@
-const negro = document.querySelector("#fondo");
-const blanco = document.querySelector("#blanco");
+const sumar = (numero1, numero2) => {
+  let resultado = numero1 + numero2;
+  document.write("Hola, " + resultado);
+};
+
 addEventListener("submit", (fili) => {
   fili.preventDefault();
-  console.log(negro.value);
-  console.log(blanco.value);
+  numero1 = parseInt(document.querySelector("#fondo").value);
+  numero2 = parseInt(document.querySelector("#blanco").value);
+  sumar(numero1, numero2);
 });
