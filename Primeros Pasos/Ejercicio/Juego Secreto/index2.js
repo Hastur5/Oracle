@@ -1,19 +1,18 @@
-// let secreto = Math.round(Math.random() * 10);
-let secretos = sortearNumeros(4);
 let input = document.querySelector("input");
 let button = document.querySelector("button");
-let contador = 1
+let secretos;
+secretos = sortearNumeros(4);
 
-console.log(secretos)
-
-function aleatorio() {
-  secretos.push(Math.round(Math.random() * 10));
-}
-
-function(cantidad){
-  while(contador<=)
-  secretos = []
-  numeroAleatorio = aleatorio()
+function sortearNumeros(cantidad) {
+  secretos = [];
+  while (secretos.length < cantidad) {
+    let numeroAleatorio = Math.floor(Math.random() * 10);
+    if (!secretos.includes(numeroAleatorio)) {
+      secretos.push(numeroAleatorio);
+    }
+  }
+  console.log(secretos);
+  return secretos;
 }
 
 function verificar() {
@@ -32,4 +31,8 @@ function verificar() {
   input.focus();
 }
 
-button.onclick = verificar;
+addEventListener("submit", (fili) => {
+  fili.preventDefault();
+  console.log("click");
+  verificar();
+});
