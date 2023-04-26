@@ -7,6 +7,7 @@ function sortearNumeros(cantidad) {
   secretos = [];
   while (secretos.length < cantidad) {
     let numeroAleatorio = Math.floor(Math.random() * 10);
+    console.log(numeroAleatorio);
     if (!secretos.includes(numeroAleatorio)) {
       secretos.push(numeroAleatorio);
     }
