@@ -1,6 +1,7 @@
 let pantalla = document.querySelector("canvas");
 let pincel = pantalla.getContext("2d");
 let x = 0;
+let y = 20;
 pincel.fillStyle = "grey";
 pincel.fillRect(0, 0, 600, 400);
 
@@ -17,8 +18,16 @@ function limpiarPantalla() {
 
 function actualizarPantalla() {
   limpiarPantalla();
-  diseñarCircunferencia(x, 20, 10);
+  diseñarCircunferencia(x, y, 10);
   x++;
+  if (x == 600) {
+    x = 0;
+    y += 20;
+    if(y == 400){
+      y = 0;
+    }
+  }
+  console.log(x, y);
 }
 
 setInterval(actualizarPantalla, 1);
