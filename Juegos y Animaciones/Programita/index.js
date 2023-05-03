@@ -17,8 +17,8 @@ function dibujarCirculo(evento) {
   pincel.fillStyle = "blue";
   pincel.beginPath();
   pincel.arc(x, y, 10, 0, 2 * 3.14);
-  pincel.fill;
+  pincel.fill();
   console.log(x + " y " + y);
 }
 
-pantalla.onclick = exhibirAlerta;
+pantalla.onclick = dibujarCirculo;
