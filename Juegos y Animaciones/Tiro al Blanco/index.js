@@ -30,9 +30,23 @@ function diseñarObjetivo(x, y) {
 
 function actualizarPantalla() {
   limpiarPantalla();
-  x = sortearPosicion(570);
-  y = sortearPosicion(370);
+  x = sortearPosicion(600);
+  y = sortearPosicion(400);
   diseñarObjetivo(x, y);
 }
 
-// setInterval(actualizarPantalla, 1000);
+function disparar(evento) {
+  let ejeX = evento.pageX - pantalla.offsetLeft;
+  let ejeY = evento.pageY - pantalla.offsetTop;
+  if (
+    x < ejeX + radio &&
+    x > ejeX - radio &&
+    y < ejeY + radio &&
+    y > ejeY - radio
+    ) {
+    alert("Acertaste");
+  }
+}
+
+pantalla.onclick = disparar;
+setInterval(actualizarPantalla, 1000);
