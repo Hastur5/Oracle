@@ -1,0 +1,25 @@
+body {
+  background: grey;
+}
+#banner {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  height: 150px;
+  border: 10px solid #000000;
+  padding: 20px;
+  margin: 40px;
+}
+p {
+  text-align: center;
+}
+em strong {
+  color: red;
+}
+#mision {
+  font-size: 20px;
+}

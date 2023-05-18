@@ -27,7 +27,7 @@ pantalla.onclick = dibujarCirculo;
 
 function alterarColor() {
   colorActual++;
-  if (colorActual == 3) {
+  if (colorActual == 3) { 
     colorActual = 0;
   }
   return false;
